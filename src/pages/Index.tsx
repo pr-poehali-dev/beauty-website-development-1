@@ -255,7 +255,7 @@ const Index = () => {
             <div className="rounded-2xl overflow-hidden border border-border h-[400px] shadow-sm">
               <iframe
                 title="Карта — салон Малина, ЖК Алхимово"
-                src="https://yandex.ru/map-widget/v1/?ll=37.567%2C55.520&z=14&text=Москва%2C%20улица%20Уточкина%2C%208к2"
+                src="https://yandex.ru/map-widget/v1/?ll=37.5685%2C55.5195&z=17&pt=37.5685%2C55.5195%2Cpm2rdm&text=Салон+красоты+Малина%2C+ул.+Уточкина+8к2"
                 width="100%"
                 height="100%"
                 frameBorder="0"
