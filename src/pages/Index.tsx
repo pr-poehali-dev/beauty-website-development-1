@@ -234,9 +234,14 @@ const Index = () => {
                 <Button onClick={openBooking} className="rounded-full px-7">
                   <Icon name="CalendarHeart" size={18} className="mr-2" /> Онлайн-запись
                 </Button>
-                <a href="https://wa.me/79895958645" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/malinaTerritoryOfBeautyy" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" className="rounded-full px-6">
-                    <Icon name="MessageCircle" size={18} className="mr-2" /> WhatsApp
+                    <Icon name="Send" size={18} className="mr-2" /> Telegram
+                  </Button>
+                </a>
+                <a href="https://max.ru/u/f9LHodD0cOLD2C_9hVQ2DrmFFL0U7dlmy2BNNFQb8eBlFrcfnmf2Le5Mrqk" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" className="rounded-full px-6">
+                    <Icon name="MessageSquare" size={18} className="mr-2" /> Макс
                   </Button>
                 </a>
                 <a href="tel:+79895958645">
@@ -275,9 +280,9 @@ const Index = () => {
             <a href="tel:+79895958645" className="hover:text-background/90 transition-colors">+7 (989) 595-86-45</a>
           </div>
           <div className="flex gap-3 items-start">
-            <a href="#" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"><Icon name="Instagram" size={18} /></a>
-            <a href="#" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"><Icon name="Send" size={18} /></a>
-            <a href="#" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"><Icon name="MessageCircle" size={18} /></a>
+            <a href="https://www.instagram.com/malina.territory.of.beauty?igsh=MTlkanNuY25vdHYyNw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"><Icon name="Instagram" size={18} /></a>
+            <a href="https://t.me/malinaTerritoryOfBeautyy" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"><Icon name="Send" size={18} /></a>
+            <a href="https://max.ru/u/f9LHodD0cOLD2C_9hVQ2DrmFFL0U7dlmy2BNNFQb8eBlFrcfnmf2Le5Mrqk" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"><Icon name="MessageSquare" size={18} /></a>
           </div>
         </div>
         <div className="container mx-auto px-5 mt-8 pt-6 border-t border-background/10 text-xs text-background/50">
