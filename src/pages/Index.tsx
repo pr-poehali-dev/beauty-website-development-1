@@ -252,15 +252,26 @@ const Index = () => {
                 </a>
               </div>
             </div>
-            <div className="rounded-2xl overflow-hidden border border-border h-[400px] shadow-sm">
-              <iframe
-                title="Карта — салон Малина, ЖК Алхимово"
-                src="https://yandex.ru/map-widget/v1/?ll=37.5685%2C55.5195&z=17&pt=37.5685%2C55.5195%2Cpm2rdm&text=Салон+красоты+Малина%2C+ул.+Уточкина+8к2"
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                allowFullScreen
-              />
+            <div className="flex flex-col gap-3">
+              <div className="rounded-2xl overflow-hidden border border-border h-[360px] shadow-sm">
+                <iframe
+                  title="Карта — салон Малина, ЖК Алхимово"
+                  src="https://yandex.ru/map-widget/v1/?ll=37.5685%2C55.5195&z=17&pt=37.5685%2C55.5195%2Cpm2rdm&text=Салон+красоты+Малина%2C+ул.+Уточкина+8к2"
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  allowFullScreen
+                />
+              </div>
+              <a
+                href="https://yandex.ru/maps/?rtext=~55.5195,37.5685&rtt=auto&text=Салон+красоты+Малина,+ул.+Уточкина+8к2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full rounded-xl border border-border py-3 text-sm font-medium hover:bg-secondary transition-colors"
+              >
+                <Icon name="Navigation" size={18} className="text-primary" />
+                Проложить маршрут до салона
+              </a>
             </div>
           </div>
         </div>
