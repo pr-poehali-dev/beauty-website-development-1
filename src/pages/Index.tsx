@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 import BookingModal from '@/components/BookingModal';
+import Reviews from '@/components/Reviews';
 
 const HERO_IMG = 'https://cdn.poehali.dev/projects/e2a9d400-6e95-4f8a-b6ce-da4780370807/files/cdfe2676-4cec-428a-8fa2-b2d8abe92df9.jpg';
 
@@ -200,6 +201,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <Reviews />
 
       {/* Contacts + Map */}
       <section id="contacts" className="py-20 sm:py-28">
