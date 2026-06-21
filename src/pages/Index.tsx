@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
+import BookingModal from '@/components/BookingModal';
 
 const HERO_IMG = 'https://cdn.poehali.dev/projects/e2a9d400-6e95-4f8a-b6ce-da4780370807/files/cdfe2676-4cec-428a-8fa2-b2d8abe92df9.jpg';
 
@@ -79,11 +80,14 @@ const services = [
 
 const Index = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [bookingOpen, setBookingOpen] = useState(false);
 
   const scrollTo = (id: string) => {
     setMenuOpen(false);
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  const openBooking = () => setBookingOpen(true);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -98,7 +102,7 @@ const Index = () => {
             <button onClick={() => scrollTo('services')} className="hover:text-primary transition-colors">Услуги</button>
             <button onClick={() => scrollTo('about')} className="hover:text-primary transition-colors">О салоне</button>
             <button onClick={() => scrollTo('contacts')} className="hover:text-primary transition-colors">Контакты</button>
-            <Button onClick={() => scrollTo('contacts')} className="rounded-full px-6">Записаться</Button>
+            <Button onClick={openBooking} className="rounded-full px-6">Записаться</Button>
           </nav>
           <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
             <Icon name={menuOpen ? 'X' : 'Menu'} size={26} />
@@ -109,7 +113,7 @@ const Index = () => {
             <button onClick={() => scrollTo('services')} className="text-left">Услуги</button>
             <button onClick={() => scrollTo('about')} className="text-left">О салоне</button>
             <button onClick={() => scrollTo('contacts')} className="text-left">Контакты</button>
-            <Button onClick={() => scrollTo('contacts')} className="rounded-full w-full">Записаться</Button>
+            <Button onClick={openBooking} className="rounded-full w-full">Записаться</Button>
           </div>
         )}
       </header>
@@ -130,7 +134,7 @@ const Index = () => {
               Уход за волосами, ногтевой сервис, косметология и взгляд — всё для вашей естественной красоты в одном пространстве.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button onClick={() => scrollTo('contacts')} size="lg" className="rounded-full px-8 text-base">
+              <Button onClick={openBooking} size="lg" className="rounded-full px-8 text-base">
                 Записаться онлайн
               </Button>
               <Button onClick={() => scrollTo('services')} variant="outline" size="lg" className="rounded-full px-8 text-base">
@@ -187,7 +191,7 @@ const Index = () => {
                     </li>
                   ))}
                 </ul>
-                <Button onClick={() => scrollTo('contacts')} variant="outline" className="w-full rounded-full">
+                <Button onClick={openBooking} variant="outline" className="w-full rounded-full">
                   Записаться
                 </Button>
               </div>
@@ -227,7 +231,7 @@ const Index = () => {
                 </div>
               </div>
               <div className="flex flex-wrap gap-3 mt-8">
-                <Button className="rounded-full px-7">
+                <Button onClick={openBooking} className="rounded-full px-7">
                   <Icon name="CalendarHeart" size={18} className="mr-2" /> Онлайн-запись
                 </Button>
                 <Button variant="outline" className="rounded-full px-6">
@@ -251,6 +255,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <BookingModal open={bookingOpen} onClose={() => setBookingOpen(false)} />
 
       {/* Footer */}
       <footer className="bg-foreground text-background py-12">

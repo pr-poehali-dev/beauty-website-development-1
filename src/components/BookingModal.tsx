@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Icon from '@/components/ui/icon';
 
-const YCLIENTS_COMPANY_ID = 'COMPANY_ID';
+const YCLIENTS_COMPANY_ID = 'n1300562';
 
 interface BookingModalProps {
   open: boolean;
@@ -73,10 +73,11 @@ const BookingModal = ({ open, onClose }: BookingModalProps) => {
           ) : (
             <iframe
               title="Онлайн-запись YClients"
-              src={`https://w1142.yclients.com/${YCLIENTS_COMPANY_ID}`}
+              src={`https://${YCLIENTS_COMPANY_ID}.yclients.com/`}
               width="100%"
               height="600"
               frameBorder="0"
+              allow="payment"
             />
           )}
         </div>
