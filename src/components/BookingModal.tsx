@@ -62,10 +62,10 @@ const BookingModal = ({ open, onClose }: BookingModalProps) => {
                 Чтобы запустить онлайн-запись, нужно подставить ваш ID компании из личного кабинета YClients. Пришлите его — и форма заработает сразу.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <a href="https://wa.me/74950000000" className="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity">
+                <a href="https://wa.me/79895958645" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity">
                   <Icon name="MessageCircle" size={18} /> Записаться через WhatsApp
                 </a>
-                <a href="tel:+74950000000" className="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 border border-border text-sm font-medium hover:bg-secondary transition-colors">
+                <a href="tel:+79895958645" className="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 border border-border text-sm font-medium hover:bg-secondary transition-colors">
                   <Icon name="Phone" size={18} /> Позвонить
                 </a>
               </div>

@@ -226,7 +226,7 @@ const Index = () => {
                   <Icon name="Phone" className="text-primary shrink-0 mt-1" size={22} />
                   <div>
                     <p className="font-medium">Телефон</p>
-                    <p className="text-muted-foreground">+7 (495) 000-00-00</p>
+                    <a href="tel:+79895958645" className="text-muted-foreground hover:text-primary transition-colors">+7 (989) 595-86-45</a>
                   </div>
                 </div>
               </div>
@@ -234,12 +234,16 @@ const Index = () => {
                 <Button onClick={openBooking} className="rounded-full px-7">
                   <Icon name="CalendarHeart" size={18} className="mr-2" /> Онлайн-запись
                 </Button>
-                <Button variant="outline" className="rounded-full px-6">
-                  <Icon name="MessageCircle" size={18} className="mr-2" /> WhatsApp
-                </Button>
-                <Button variant="outline" className="rounded-full px-6">
-                  <Icon name="Send" size={18} className="mr-2" /> Telegram
-                </Button>
+                <a href="https://wa.me/79895958645" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" className="rounded-full px-6">
+                    <Icon name="MessageCircle" size={18} className="mr-2" /> WhatsApp
+                  </Button>
+                </a>
+                <a href="tel:+79895958645">
+                  <Button variant="outline" className="rounded-full px-6">
+                    <Icon name="Phone" size={18} className="mr-2" /> Позвонить
+                  </Button>
+                </a>
               </div>
             </div>
             <div className="rounded-2xl overflow-hidden border border-border h-[400px] shadow-sm">
@@ -268,7 +272,7 @@ const Index = () => {
           <div className="text-sm text-background/70 space-y-1">
             <p>ул. Уточкина, д. 8, к. 2, Москва</p>
             <p>Ежедневно 9:00–21:00</p>
-            <p>+7 (495) 000-00-00</p>
+            <a href="tel:+79895958645" className="hover:text-background/90 transition-colors">+7 (989) 595-86-45</a>
           </div>
           <div className="flex gap-3 items-start">
             <a href="#" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"><Icon name="Instagram" size={18} /></a>
